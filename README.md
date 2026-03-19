@@ -172,7 +172,7 @@ Body:
 
 ## ⚠️ Notes
 
-* Uses Spotify Search API (no premium required)
+* Uses Spotify Search API (Premium maybe required for support)
 * Ensure Flask server is running before frontend
 * Enable CORS in backend
 
