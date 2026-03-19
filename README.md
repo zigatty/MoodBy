@@ -187,12 +187,6 @@ Body:
 
 ---
 
-## 👨‍💻 Author
 
-Your Name
 
----
 
-## ⭐ If you like this project
-
-Give it a ⭐ on GitHub!
