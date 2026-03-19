@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood-Based Music Recommender</title>
+    <meta name="description" content="Select your mood and get music suggestions">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-default">
+    <div class="container">
+        <header>
+            <h1>Mood-Based Music Recommender</h1>
+            <p class="subtitle">EXPERIENCE THE SOUND OF YOUR EMOTIONS</p>
+        </header>
+
+        <section class="mood-selection" role="group" aria-label="Mood selection">
+            <button class="mood-btn" data-mood="calm" aria-pressed="false">Calm</button>
+            <button class="mood-btn" data-mood="happy" aria-pressed="false">Happy</button>
+            <button class="mood-btn" data-mood="focus" aria-pressed="false">Focus</button>
+            <button class="mood-btn" data-mood="energetic" aria-pressed="false">Energetic</button>
+        </section>
+
+        <!-- Optional trigger for local backend songs -->
+        <div class="local-trigger-wrap">
+            <button class="mood-btn secondary" onclick="loadSongs()">Load All Local Songs</button>
+        </div>
+
+        <section class="results-section">
+            <div id="status-message" class="status-message">Please select a mood</div>
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <span>Loading music...</span>
+            </div>
+            <div id="error" class="error hidden">Unable to fetch recommendations</div>
+            
+            <div id="results-container" class="results-container">
+                <!-- Music recommendations will be inserted here -->
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
